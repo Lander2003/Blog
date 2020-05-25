@@ -1,0 +1,11 @@
+<%- include("partials/header") %>
+      <% for(let i = 0; i<newPosts.length; i++){ %>
+       <div class="post-container">
+         <h1 class="post-title-background"><%= newPosts[i].title %></h1>
+         <h1 class="post-title"><%= newPosts[i].title %></h1>
+         <p class="post-author">Author: <%= newPosts[i].username %> - <%= newPosts[i].date %></p>
+         <p class="post-content"><%= newPosts[i].postcontent.substring(0, 250) %> ...</p>
+         <a href="/posts/<%= newPosts[i].id %>">See more</a>
+       </div>
+      <% } %>
+<%- include("partials/footer") %>

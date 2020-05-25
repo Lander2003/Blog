@@ -1,0 +1,13 @@
+<%- include("partials/header") %>
+<div class="post-container">
+  <h1 class="post-title-background"><%= post.title %></h1>
+  <h1 class="post-title"><%= post.title %></h1>
+  <p class="post-author">Author: <%= post.username %> - <%= post.date %></p>
+  <p id="post-content"><%= post.postcontent %></p>
+  <a href="/">Go back</a>
+</div>
+
+</div>
+<script src="../clientjs/client.js" charset="utf-8"></script>
+</body>
+</html>

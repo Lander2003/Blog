@@ -1,0 +1,13 @@
+<%- include("partials/header") %>
+
+   <form class="createPostForm" action="/createPost" method="post">
+      <label for="username">Full Name</label>
+      <input type="text" name="username" value="" required>
+      <label for="username">Title</label>
+      <input type="text" name="postTitle" value="" required>
+      <label for="postcontent">Your story/content</label>
+      <textarea name="postcontent" rows="14" cols="80" required></textarea>
+      <button type="submit" name="button">Create Post</button>
+   </form>
+
+<%- include("partials/footer") %>
